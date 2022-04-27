@@ -355,10 +355,11 @@ public class VistaCuestionario extends javax.swing.JFrame {
     }
 
     public void derrota() {
-        JOptionPane.showMessageDialog(null, "Uy! Lo siento perdiste, vuelve a intentarlo!", "Perdiste", JOptionPane.ERROR_MESSAGE);
+
         this.dispose();
-        VistaPrincipal principal = new VistaPrincipal();
-        principal.setVisible(true);
+
+        VistaDerrota derrota = new VistaDerrota();
+        derrota.setVisible(true);
     }
 
     public void obtenerPremio() {
